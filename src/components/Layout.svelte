@@ -2,16 +2,16 @@
   <header>
     <nav>
       <a href="/" class="brand">Typing Practice</a>
+      <slot name="nav-items"></slot>
     </nav>
   </header>
-  <main>
-    <slot />
-  </main>
+  <slot name="main" />
   <footer>
     <p>Made by <a href="https://github.com/OhBeomho">OhBeomho</a></p>
     <p>
       Source on <a href="https://github.com/OhBeomho/typing-practice">GitHub</a>
     </p>
+    <p>Using <a href="https://random-word-api.vercel.app/">Rando</a> to generate words</p>
   </footer>
 </div>
 
@@ -41,19 +41,14 @@
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav .brand {
     color: white;
     font-size: 25px;
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   footer {
