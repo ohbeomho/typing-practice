@@ -190,7 +190,6 @@
     opacity: 0.5;
     user-select: none;
     position: relative;
-    overflow-wrap: anywhere;
     font-family: "Roboto Mono", monospace;
 
     & input {
